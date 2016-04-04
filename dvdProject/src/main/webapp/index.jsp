@@ -1,8 +1,11 @@
 <%@page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
 <!DOCTYPE html>
 <html lang="kr">
 <head>
+
 
 
 <script
@@ -111,7 +114,8 @@
 				<form class="form-horizontal" style="background-color: white">
 					<fieldset>
 						<!-- Form Name -->
-						<legend >SignUp Form</legend>
+						<legend>SignUp Form</legend>
+						<%-- <spring:message code="member.register"/> --%>
 
 						<!-- Text input-->
 						<div class="form-group">
@@ -222,6 +226,7 @@
 		<!-- Main jumbotron for a primary marketing message or call to action -->
 		<div class="jumbotron">
 			<h1>Hello, world!</h1>
+
 			<p>This is a template for a simple marketing or informational
 				website. It includes a large callout called a jumbotron and three
 				supporting pieces of content. Use it as a starting point to create
@@ -299,15 +304,14 @@
 
 	</div>
 	<script>
-	<%--페이지 로딩 이미지 보여주기 --%>
-	$(document).ready(function() {
-	    $(window).load(function() {
-	         $('#loader').hide();
-	         $('#myDiv').show();
-	    });
-	});
-	
 		
+	<%--페이지 로딩 이미지 보여주기 --%>
+		$(document).ready(function() {
+			$(window).load(function() {
+				$('#loader').hide();
+				$('#myDiv').show();
+			});
+		});
 	</script>
 
 </body>
