@@ -1,10 +1,11 @@
-<%@ page contentType="text/html; charset=utf-8" %>
-<%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
-
+<%@ page contentType="text/html; charset=utf-8"%>
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 
 <html lang="kr">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
 <head>
 
 
@@ -49,7 +50,8 @@
 
 
 
-
+<link rel="stylesheet"
+	href="${pageContext.request.contextPath}/resource/css/search.css">
 
 
 </head>
@@ -78,25 +80,36 @@
 					</button>
 					<%--menu --%>
 					<a class="navbar-brand" href="#">DVDProject</a> <a
-						class="navbar-brand" href="#">DVD 등록</a> <a class="navbar-brand"
-						href="#">DVD 검색</a> <a class="navbar-brand" href="#">회원조회</a> <a
+						class="navbar-brand" href=<c:url value="/dvdView"/>>DVD 보기</a> <a class="navbar-brand"
+						href="<c:url value="/hello"/>">DVD 검색</a> <a class="navbar-brand" href="#">회원조회</a> <a
 						class="navbar-brand" href="#">DVD방 관리</a>
 				</div>
 				<div id="navbar" class="navbar-collapse collapse">
 					<form class="navbar-form navbar-right">
-						<div class="form-group">
+						<%-- <div class="form-group">
 							<input type="text" placeholder="Email" class="form-control">
 						</div>
 						<div class="form-group">
 							<input type="password" placeholder="Password"
 								class="form-control">
 						</div>
-						<button type="submit" class="btn btn-success">Sign in</button>
-						<button type="button" class="btn btn-primary" data-toggle="modal"
-							data-target="#myModal">Sign Up</button>
+						
+						<button type="submit" class="btn btn-success">Sign in</button> --%>
 
+						<input id="searchInput" type="search" class="form-control"
+							placeholder="영화  또는 회원 검색">
 
+						<button type="button" class="btn btn-info">
+							<span class="glyphicon glyphicon-search"></span> Search
+						</button>
+						<button type="button" class="btn btn-success" data-toggle="modal"
+							data-target="#signUpFormModal">DVD방 회원가입</button>
+							<button type="button" class="btn btn-danger" onclick="location.href='/dvdProject'">로그아웃</button>
 					</form>
+
+
+
+
 
 				</div>
 				<!--/.navbar-collapse -->
@@ -106,7 +119,7 @@
 		</nav>
 
 		<!-- Modal -->
-		<div id="myModal" class="modal fade" role="dialog">
+		<div id="signUpFormModal" class="modal fade" role="dialog">
 
 			<div class="modal-dialog">
 
@@ -114,8 +127,9 @@
 				<form class="form-horizontal" style="background-color: white">
 					<fieldset>
 						<!-- Form Name -->
-						<legend>SignUp Form</legend>
-						
+						<legend>
+							<h1 style="text-align: center">현대 DVD방 회원가입</h1>
+						</legend>
 
 						<!-- Text input-->
 						<div class="form-group">
@@ -126,7 +140,6 @@
 
 							</div>
 						</div>
-
 						<!-- Text input-->
 						<div class="form-group">
 							<label class="col-md-4 control-label" for="emailInputText">Email</label>
@@ -134,10 +147,8 @@
 								<input id="emailInputText" name="emailInputText" type="text"
 									placeholder="이메일 형식을 지켜주세요" class="form-control input-md"
 									required>
-
 							</div>
 						</div>
-
 						<!-- Button -->
 						<div class="form-group">
 							<label class="col-md-4 control-label" for="emailConfirm">Email
@@ -158,8 +169,8 @@
 
 							</div>
 						</div>
-
-						<!-- Password input-->
+						<%-- 
+						Password input
 						<div class="form-group">
 							<label class="col-md-4 control-label" for="passInput">Password</label>
 							<div class="col-md-4">
@@ -169,7 +180,7 @@
 							</div>
 						</div>
 
-						<!-- Password input-->
+						Password input
 						<div class="form-group">
 							<label class="col-md-4 control-label" for="passInputConfirm">Password
 								Confirm</label>
@@ -179,7 +190,7 @@
 									class="form-control input-md" required>
 
 							</div>
-						</div>
+						</div> --%>
 
 						<!-- Multiple Radios -->
 						<div class="form-group">
@@ -224,26 +235,9 @@
 
 
 		<!-- Main jumbotron for a primary marketing message or call to action -->
-		<div class="jumbotron">
-			<h1>	</h1>
-<%-- <spring:message code="name" var="nameTest" />	
-${nameTest} --%>
-			<p>This is a template for a simple marketing or informational
-				website. It includes a large callout called a jumbotron and three
-				supporting pieces of content. Use it as a starting point to create
-				something more unique.</p>
-			<p>
-				<a class="btn btn-primary btn-lg" href="#" role="button">Learn
-					more &raquo;</a>
-			</p>
-
-
-
+		<div class="jumbotron">			
+				<h1 style="text-align: center;">현대 DVD방</h1>					
 		</div>
-
-
-
-
 		<div class="container">
 			<!-- Example row of columns -->
 			<div class="row">
@@ -285,7 +279,7 @@ ${nameTest} --%>
 			<hr>
 
 			<footer>
-				<p>&copy; Company 2014</p>
+				<p>&copy; JustOne Company 2016</p>
 			</footer>
 		</div>
 		<!-- /container -->

@@ -9,6 +9,7 @@
 
 
 	<mvc:view-controller path="/main" view-name="main" />
-
+	<bean class="controller.HelloController"/>
+	<bean class="controller.dvdViewController" />
 
 </beans>
