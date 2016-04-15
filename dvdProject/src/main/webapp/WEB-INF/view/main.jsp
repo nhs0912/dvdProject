@@ -1,6 +1,6 @@
 <%@ page contentType="text/html; charset=utf-8"%>
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html>
 
 <html lang="kr">
@@ -8,7 +8,12 @@
 	src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
 <head>
 
+<%-- <link rel="stylesheet"
+	href="${pageContext.request.contextPath}/resource/css/bootstrap.min.css">
 
+ --%><%-- <link rel="stylesheet"
+	href="${pageContext.request.contextPath}/resource/css/bootstrap.css">
+ --%>
 
 
 <!-- 합쳐지고 최소화된 최신 CSS -->
@@ -16,12 +21,13 @@
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
 
 <!-- 부가적인 테마 -->
-<link rel="stylesheet"
+<!-- <link rel="stylesheet"
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
-
+ -->
 <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
 <script
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -80,9 +86,10 @@
 					</button>
 					<%--menu --%>
 					<a class="navbar-brand" href="#">DVDProject</a> <a
-						class="navbar-brand" href=<c:url value="/dvdView"/>>DVD 보기</a> <a class="navbar-brand"
-						href="<c:url value="/hello"/>">DVD 검색</a> <a class="navbar-brand" href="#">회원조회</a> <a
-						class="navbar-brand" href="#">DVD방 관리</a>
+						class="navbar-brand" href=<c:url value="/dvdView"/>>DVD 보기</a> <a
+						class="navbar-brand" href="<c:url value="/hello"/>">DVD 검색</a> <a
+						class="navbar-brand" href="#">회원조회</a> <a class="navbar-brand"
+						href="#">DVD방 관리</a>
 				</div>
 				<div id="navbar" class="navbar-collapse collapse">
 					<form class="navbar-form navbar-right">
@@ -104,7 +111,8 @@
 						</button>
 						<button type="button" class="btn btn-success" data-toggle="modal"
 							data-target="#signUpFormModal">DVD방 회원가입</button>
-							<button type="button" class="btn btn-danger" onclick="location.href='/dvdProject'">로그아웃</button>
+						<button type="button" class="btn btn-danger"
+							onclick="location.href='/dvdProject'">로그아웃</button>
 					</form>
 
 
@@ -235,8 +243,8 @@
 
 
 		<!-- Main jumbotron for a primary marketing message or call to action -->
-		<div class="jumbotron">			
-				<h1 style="text-align: center;">현대 DVD방</h1>					
+		<div class="jumbotron">
+			<h1 style="text-align: center;">현대 DVD방</h1>
 		</div>
 		<div class="container">
 			<!-- Example row of columns -->
