@@ -4,14 +4,17 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+@import url(http://fonts.googleapis.com/css?family=Raleway);
+
 html {
-	font-family: 'RobotoDraft', 'Roboto' ,sans-serif;
+	font-family: 'RobotoDraft', 'Roboto', sans-serif;
 	-webkit-text-size-adjust: 100%;
 	-ms-text-size-adjust: 100%;
 }
 
 body {
-	margin: 0;
+	margin: 0px;
+	/* margin: 0; */
 }
 
 article, aside, details, figcaption, figure, footer, header, hgroup,
@@ -24,11 +27,42 @@ audio, canvas, progress, video {
 	vertical-align: baseline;
 }
 
-audio:not ([controls] ) {
-	display: none;
-	height: 0;
-}
+audio
 
+
+:not
+
+ 
+
+(
+[
+controls
+]
+
+ 
+
+)
+{
+display
+
+
+:
+
+ 
+
+none
+
+
+;
+height
+
+
+:
+
+ 
+
+0;
+}
 [hidden], template {
 	display: none;
 }
@@ -86,10 +120,32 @@ img {
 	border: 0;
 }
 
-svg:not (:root ) {
-	overflow: hidden;
-}
+svg
 
+
+:not
+
+ 
+
+(
+:root
+
+ 
+
+)
+{
+overflow
+
+
+:
+
+ 
+
+hidden
+
+
+;
+}
 figure {
 	margin: 1em 40px;
 }
@@ -3975,26 +4031,154 @@ tbody.collapse.in {
 	margin-left: 5px;
 }
 
-.btn-group>.btn:not (:first-child ):not (:last-child ):not (.dropdown-toggle
-	) {
-	border-radius: 0;
-}
+.btn-group
+>
+.btn
 
+
+:not
+
+ 
+
+(
+:first-child
+
+ 
+
+)
+:not
+
+ 
+
+(
+:last-child
+
+ 
+
+)
+:not
+
+ 
+
+(
+.dropdown-toggle
+
+
+	
+
+)
+{
+border-radius
+
+
+:
+
+ 
+
+0;
+}
 .btn-group>.btn:first-child {
 	margin-left: 0;
 }
 
-.btn-group>.btn:first-child:not (:last-child ):not (.dropdown-toggle ) {
-	border-top-right-radius: 0;
-	border-bottom-right-radius: 0;
-}
+.btn-group
+>
+.btn
 
-.btn-group>.btn:last-child:not (:first-child ), .btn-group>.dropdown-toggle:not
-	(:first-child ) {
-	border-top-left-radius: 0;
-	border-bottom-left-radius: 0;
-}
 
+:first-child
+
+
+:not
+
+ 
+
+(
+:last-child
+
+ 
+
+)
+:not
+
+ 
+
+(
+.dropdown-toggle
+
+ 
+
+)
+{
+border-top-right-radius
+
+
+:
+
+ 
+
+0;
+border-bottom-right-radius
+
+
+:
+
+ 
+
+0;
+}
+.btn-group
+>
+.btn
+
+
+:last-child
+
+
+:not
+
+ 
+
+(
+:first-child
+
+ 
+
+),
+.btn-group
+>
+.dropdown-toggle
+
+
+:not
+
+
+	
+
+(
+:first-child
+
+ 
+
+)
+{
+border-top-left-radius
+
+
+:
+
+ 
+
+0;
+border-bottom-left-radius
+
+
+:
+
+ 
+
+0;
+}
 .btn-group>.btn-group {
 	float: left;
 }
@@ -4071,24 +4255,161 @@ tbody.collapse.in {
 	margin-left: 0;
 }
 
-.btn-group-vertical>.btn:not (:first-child ):not (:last-child ) {
-	border-radius: 0;
-}
+.btn-group-vertical
+>
+.btn
 
-.btn-group-vertical>.btn:first-child:not (:last-child ) {
-	border-top-left-radius: 4px;
-	border-top-right-radius: 4px;
-	border-bottom-right-radius: 0;
-	border-bottom-left-radius: 0;
-}
 
-.btn-group-vertical>.btn:last-child:not (:first-child ) {
-	border-top-left-radius: 0;
-	border-top-right-radius: 0;
-	border-bottom-right-radius: 4px;
-	border-bottom-left-radius: 4px;
-}
+:not
 
+ 
+
+(
+:first-child
+
+ 
+
+)
+:not
+
+ 
+
+(
+:last-child
+
+ 
+
+)
+{
+border-radius
+
+
+:
+
+ 
+
+0;
+}
+.btn-group-vertical
+>
+.btn
+
+
+:first-child
+
+
+:not
+
+ 
+
+(
+:last-child
+
+ 
+
+)
+{
+border-top-left-radius
+
+
+:
+
+ 
+
+4
+px
+
+
+;
+border-top-right-radius
+
+
+:
+
+ 
+
+4
+px
+
+
+;
+border-bottom-right-radius
+
+
+:
+
+ 
+
+0;
+border-bottom-left-radius
+
+
+:
+
+ 
+
+0;
+}
+.btn-group-vertical
+>
+.btn
+
+
+:last-child
+
+
+:not
+
+ 
+
+(
+:first-child
+
+ 
+
+)
+{
+border-top-left-radius
+
+
+:
+
+ 
+
+0;
+border-top-right-radius
+
+
+:
+
+ 
+
+0;
+border-bottom-right-radius
+
+
+:
+
+ 
+
+4
+px
+
+
+;
+border-bottom-left-radius
+
+
+:
+
+ 
+
+4
+px
+
+
+;
+}
 .btn-group-vertical>.btn-group:not (:first-child ):not (:last-child ) >.btn
 	{
 	border-radius: 0;
@@ -4208,12 +4529,90 @@ textarea.input-group-sm>.form-control, textarea.input-group-sm>.input-group-addo
 	display: table-cell;
 }
 
-.input-group-addon:not (:first-child ):not (:last-child ),
-	.input-group-btn:not (:first-child ):not (:last-child ), .input-group .form-control:not
-	(:first-child ):not (:last-child ) {
-	border-radius: 0;
-}
+.input-group-addon
 
+
+:not
+
+ 
+
+(
+:first-child
+
+ 
+
+)
+:not
+
+ 
+
+(
+:last-child
+
+ 
+
+),
+.input-group-btn
+
+
+:not
+
+ 
+
+(
+:first-child
+
+ 
+
+)
+:not
+
+ 
+
+(
+:last-child
+
+ 
+
+),
+.input-group
+
+ 
+
+.form-control
+
+
+:not
+
+
+	
+
+(
+:first-child
+
+ 
+
+)
+:not
+
+ 
+
+(
+:last-child
+
+ 
+
+)
+{
+border-radius
+
+
+:
+
+ 
+
+0;
+}
 .input-group-addon, .input-group-btn {
 	width: 1%;
 	white-space: nowrap;
@@ -4252,8 +4651,8 @@ textarea.input-group-sm>.form-control, textarea.input-group-sm>.input-group-addo
 .input-group .form-control:first-child, .input-group-addon:first-child,
 	.input-group-btn:first-child>.btn, .input-group-btn:first-child>.btn-group>.btn,
 	.input-group-btn:first-child>.dropdown-toggle, .input-group-btn:last-child>.btn:not
-	(:last-child ):not (.dropdown-toggle ), .input-group-btn:last-child>.btn-group:not
-	(:last-child ) >.btn {
+	 (:last-child ):not (.dropdown-toggle ), .input-group-btn:last-child>.btn-group:not
+	 (:last-child ) >.btn {
 	border-top-right-radius: 0;
 	border-bottom-right-radius: 0;
 }
@@ -4265,8 +4664,8 @@ textarea.input-group-sm>.form-control, textarea.input-group-sm>.input-group-addo
 .input-group .form-control:last-child, .input-group-addon:last-child,
 	.input-group-btn:last-child>.btn, .input-group-btn:last-child>.btn-group>.btn,
 	.input-group-btn:last-child>.dropdown-toggle, .input-group-btn:first-child>.btn:not
-	(:first-child ), .input-group-btn:first-child>.btn-group:not (:first-child
-	) >.btn {
+	 (:first-child ), .input-group-btn:first-child>.btn-group:not (:first-child
+	 ) >.btn {
 	border-top-left-radius: 0;
 	border-bottom-left-radius: 0;
 }
@@ -4305,7 +4704,79 @@ textarea.input-group-sm>.form-control, textarea.input-group-sm>.input-group-addo
 	margin-left: -1px;
 }
 
+/*메뉴 마우스 올려놓기 기능(hover)
+*/
+#nav-1 {
+	background: #3fa46a;
+}
+
+#nav-2 {
+	background: #5175C0;
+}
+
+#nav-3 {
+	background: #EEA200;
+}
+
+.link-1 {
+	transition: 0.3s ease;
+	background: #3fa46a;
+	color: #ffffff;
+	font-size: 20px;
+	text-decoration: none;
+	border-top: 4px solid #3fa46a;
+	border-bottom: 4px solid #3fa46a;
+	padding: 20px 0;
+	margin: 0 20px;
+	float: left;
+	height: 50px;
+	padding: 15px 15px;
+	font-size: 18px;
+	line-height: 20px;
+}
+
+.link-1:hover {
+	border-top: 4px solid #ffffff;
+	border-bottom: 4px solid #ffffff;
+	padding: 6px 0;
+}
+
+.link-2 {
+	transition: 0.6s;
+	color: #ffffff;
+	font-size: 20px;
+	text-decoration: none;
+	border-right: 2px dotted transparent;
+	padding: 30px 8px 0 10px;
+	margin: 0 10px;
+}
+
+.link-2:hover {
+	border-right: 2px dotted #ffffff;
+	padding-bottom: 24px;
+}
+
+.link-3 {
+	transition: 0.4s;
+	color: #ffffff;
+	font-size: 20px;
+	text-decoration: none;
+	padding: 0 10px;
+	margin: 0 10px;
+}
+
+.link-3:hover {
+	background-color: #ffffff;
+	color: #EEA200;
+	padding: 24px 10px;
+}
+
 .nav {
+	/* 	margin-top: 40px;
+	padding: 24px;
+	text-align: center;
+	font-family: Raleway;
+	box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5); */
 	padding-left: 0;
 	margin-bottom: 0;
 	list-style: none;
@@ -4999,18 +5470,20 @@ textarea.input-group-sm>.form-control, textarea.input-group-sm>.input-group-addo
 
 .navbar-inverse {
 	/*네비게이션 바 색깔*/
-	background-color:#ed2553 /* #222 */;
-	border-color: #080808;
+	background-color: white; /*  #ed2553; */ /* #222 */
+	border-color: white; /* #ed2553; */
 }
 
 .navbar-inverse .navbar-brand {
-	color: #9d9d9d;
+	/*메뉴 글씨 색깔*/
+	color: black; /* white; */ /* #9d9d9d */
 }
 
 .navbar-inverse .navbar-brand:hover, .navbar-inverse .navbar-brand:focus
 	{
-	color: #fff;
-	background-color: transparent;
+	/*마우스 올려놓으면 변화*/
+	color: #ed2553; /* #fff */
+	background-color: white; /* transparent; */
 }
 
 .navbar-inverse .navbar-text {
