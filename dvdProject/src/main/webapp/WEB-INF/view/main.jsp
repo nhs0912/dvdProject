@@ -165,7 +165,7 @@
 		</div>
 		<!-- Main jumbotron for a primary marketing message or call to action -->
 		<div class="jumbotron">
-			<h1 style="text-align: center;">현대 DVD방</h1>
+			<h1 style="text-align: center;">환영합니다.</h1>
 		</div>
 		<div class="container">
 			<!-- Example row of columns -->
