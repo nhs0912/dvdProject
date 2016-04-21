@@ -91,28 +91,38 @@
 						<div class="form-group">
 							<label class="col-md-4 control-label" for="Name">이름</label>
 							<div class="col-md-4">
-								<input id="Name" name="Name" type="text" placeholder="이름" class="form-control input-md" required>
+								<input id="Name" name="Name" type="text" placeholder="이름" class="form-control input-md" required="required">
 							</div>
 						</div>
+						<div class="form-group">
+							<label class="col-md-4 control-label" for="phoneInputText">전화번호</label>
+							<div class="col-md-4">
+								<input id="phoneInputText" name="phoneInputText" type="text" placeholder="010-1234-1234" class="form-control input-md" required="required">
+									
+							</div>
+							<button id="phoneConfirm" name="phoneConfirm" class="btn btn-success">중복확인</button>
+						</div>
+												
 						<!-- Text input-->
 						<div class="form-group">
 							<label class="col-md-4 control-label" for="emailInputText">Email</label>
 							<div class="col-md-4">
 								<input id="emailInputText" name="emailInputText" type="text" placeholder="이메일 형식을 지켜주세요" class="form-control input-md" required>
 							</div>
+								<button id="emailConfirm" name="emailConfirm" class="btn btn-success">중복확인</button>
 						</div>
 						<!-- Button -->
-						<div class="form-group">
+						<!--  <div class="form-group">
 							<label class="col-md-4 control-label" for="emailConfirm">Email 확인</label>
 							<div class="col-md-4">
-								<button id="emailConfirm" name="emailConfirm" class="btn btn-success">중복확인</button>
+							
 							</div>
-						</div>
+						</div> -->
 						<!-- Text input-->
 						<div class="form-group">
 							<label class="col-md-4 control-label" for="birthYear">생년월일</label>
 							<div class="col-md-4">
-								<input id="birthYear" name="birthYear" type="text" placeholder="ex)2016-09-12" class="form-control input-md" required>
+								<input id="birthYear" name="birthYear" type="text" placeholder="ex)2016-09-12" class="form-control input-md" required="required">
 							</div>
 						</div>
 						<%-- 
@@ -140,7 +150,7 @@
 						<!-- Multiple Radios -->
 						<div class="form-group">
 							<label class="col-md-4 control-label" for="genderRadio">Gender(성별)</label>
-							<div class="col-md-4">
+							<div class="col-md-4" required="required">
 								<div class="radio">
 									<label for="genderRadio-0"> <input type="radio" name="genderRadio" id="genderRadio-0" value="1" checked="checked"> 남자(male)
 									</label>
@@ -165,7 +175,8 @@
 		</div>
 		<!-- Main jumbotron for a primary marketing message or call to action -->
 		<div class="jumbotron">
-			<h1 style="text-align: center;">환영합니다.</h1>
+			<h1 style="text-align: center;">현대 DVD</h1>
+			
 		</div>
 		<div class="container">
 			<!-- Example row of columns -->
