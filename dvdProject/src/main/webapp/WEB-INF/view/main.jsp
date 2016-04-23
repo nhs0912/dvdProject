@@ -107,7 +107,7 @@
 						<div class="form-group">
 							<label class="col-md-4 control-label" for="emailInputText">Email</label>
 							<div class="col-md-4">
-								<input id="emailInputText" name="emailInputText" type="text" placeholder="이메일 형식을 지켜주세요" class="form-control input-md" required>
+								<input id="emailInputText" name="emailInputText" type="text" placeholder="dvd@naver.com" class="form-control input-md" required>
 							</div>
 								<button id="emailConfirm" name="emailConfirm" class="btn btn-success">중복확인</button>
 						</div>
