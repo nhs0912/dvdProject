@@ -68,8 +68,8 @@
 					<%--menu --%>
 					<a class="navbar-brand" href="#">DVDProject</a> <a
 						class="navbar-brand" href="/dvdView.do">DVD 보기</a> <a
-						class="navbar-brand" href="<c:url value="/hello"/>">DVD 검색</a> <a
-						class="navbar-brand" href="#">회원조회</a> <a class="navbar-brand"
+						class="navbar-brand" href="/hello.do">DVD 검색</a> <a
+						class="navbar-brand" href="/userInfo.jsp">회원조회</a> <a class="navbar-brand"
 						href="#">DVD방 관리</a>
 				</div>
 				<div id="navbar" class="navbar-collapse collapse">
@@ -178,7 +178,7 @@
 						</div> --%>
 						<!-- Multiple Radios -->
 						<div class="form-group">
-							<label class="col-md-4 control-label" for="genderRadio">Gender(성별)</label>
+							<%--<label class="col-md-4 control-label" for="genderRadio">Gender(성별)</label>--%>
 							<div class="col-md-4" required="required">
 								<div class="radio">
 									<label for="genderRadio-0"> <input type="radio"
@@ -280,6 +280,7 @@
 		$(document).ready(function() {
 
 			$(document).on("click", "a", function(event) {
+
 				event.preventDefault();
 				var url = $(this).prop("href");
 				if (url.trim() != "") {
