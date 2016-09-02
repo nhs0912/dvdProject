@@ -18,15 +18,17 @@
 
     <!-- 로그인  -->
     <!--<select id="selectById" resultType="vo.User">-->
-        <!--SELECT * FROM member WHERE e_mail = #{email}-->
+    <!--SELECT * FROM member WHERE e_mail = #{email}-->
     <!--</select>-->
 
     <!--&lt;!&ndash; 로그아웃 &ndash;&gt;-->
 
     <!--&lt;!&ndash; 회원가입 &ndash;&gt;-->
     <insert id="insert">
-        INSERT INTO member(e_mail, nickname, password)
-        VALUES(#{e_mail}, #{nickname}, #{password})
+INSERT INTO users(user_no,user_name,id, password, admin_level)
+VALUES(USER_NO_SEQ.Nextval,#{user_name},'nhs0912','123','admin');
+--         INSERT INTO member(e_mail, nickname, password)
+--         VALUES(#{e_mail}, #{nickname}, #{password})
     </insert>
 
 
