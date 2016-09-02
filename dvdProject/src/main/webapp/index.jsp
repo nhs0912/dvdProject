@@ -20,6 +20,10 @@
 
     <link rel="stylesheet"
           href="${pageContext.request.contextPath}/resource/css/style.css">
+    <style type="text/css">
+        #Username {
+        }
+    </style>
 
 
 </head>
@@ -48,8 +52,8 @@
                 <div class="bar"></div>
             </div>
             <div class="input-container">
-                <input type="password" id="Password" required="required"/> <label
-                    for="Password">Password</label>
+                <input type="password" id="login_Password" required="required"/> <label
+                    for="login_Password">Password</label>
                 <div class="bar"></div>
             </div>
             <div class="button-container">
@@ -70,13 +74,18 @@
         </h1>
         <form>
             <div class="input-container">
+                <input type="text" id="id" required="required"/> <label
+                    for="Username">ID</label>
+                <div class="bar"></div>
+            </div>
+            <div class="input-container">
                 <input type="text" id="Username" required="required"/> <label
                     for="Username">Username</label>
                 <div class="bar"></div>
             </div>
             <div class="input-container">
-                <input type="password" id="Password" required="required"/> <label
-                    for="Password">Password</label>
+                <input type="password" id="signup_Password" required="required"/> <label
+                    for="signup_Password">Password</label>
                 <div class="bar"></div>
             </div>
             <div class="input-container">
