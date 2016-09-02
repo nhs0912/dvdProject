@@ -35,7 +35,7 @@
             href='#'>Noh HeeSeok</a></span>
 </div>
 <div class="rerun">
-    <a href="main">main으로 가기</a>
+    <a href="/main.do">main으로 가기</a>
 </div>
 <div class="container">
     <div class="card"></div>

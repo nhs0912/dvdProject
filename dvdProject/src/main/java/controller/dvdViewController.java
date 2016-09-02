@@ -9,7 +9,7 @@ public class dvdViewController {
 	@RequestMapping("/dvdView.do")
 	public String dvdView()
 	{
-		System.out.println("작동");
+		System.out.println("dvdController 작동");
 		return "/dvdView";
 	}
 }
