@@ -2,7 +2,7 @@ package vo;
 
 public class User {
     int user_no; //사용자 번호
-    String id //아이디
+    String id;//아이디
     String user_name; //사용자이름
     String password; //비밀번호
     String phone_number; //전화번호

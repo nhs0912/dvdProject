@@ -3,6 +3,11 @@
     <output-path>$PROJECT_DIR$/dvdProject/target</output-path>
     <root id="archive" name="dvdProject-0.0.1-SNAPSHOT.war">
       <element id="artifact" artifact-name="dvdProject:war exploded" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="ojdbc14" />
+        </element>
+      </element>
     </root>
   </artifact>
 </component>
